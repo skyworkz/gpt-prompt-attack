@@ -1,0 +1,64 @@
+.heading-12 {
+    color: #22201d;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #f7f0dc;
+}
+
+.letter-bg-color {
+    color: #d79922;
+    background-color: #efe2ba;
+    border: 3px solid #000;
+    border-bottom-color: #22201d;
+    border-top-right-radius: 100px;
+}
+
+.letter-bg-color.red {
+    color: #efe2ba;
+    background-color: #f13c20;
+    border-top-left-radius: 100px;
+}
+
+.letter-bg-color.gold {
+    color: #efe2ba;
+    background-color: #d79922;
+    border-bottom-left-radius: 100px;
+}
+
+.letter-bg-color.blue {
+    color: #d79922;
+    background-color: #c5cbe3;
+    border-bottom-right-radius: 100px;
+}
+
+.letter-bg-color.light-blue {
+    color: #4056a1;
+    background-color: #c5cbe3;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 100px;
+}
+
+.relative-position-3 {
+    z-index: 3;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #f7f0dc;
+    position: relative;
+}
+
+.relative-position-1 {
+    z-index: 1;
+    position: relative;
+}
+
+.relative-position-2 {
+    z-index: 2;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #f7f0dc;
+    position: relative;
+}
+
+.relative-position {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #f7f0dc;
+    position: relative;
+}
