@@ -141,7 +141,7 @@
          }
          .carousel {
             position: relative;
-            height: 100px;
+            height: 200px;
             width: 454px;
          }
          .slides {
@@ -165,10 +165,14 @@
          }
          .slide[data-state=active] {
             display: block;
-            z-index: 1000;
+            z-index: 900;
          }
-         .carousel .slide img {
-            border-radius: 4px;
+         .carousel .slide object {
+            pointer-events: none;
+         }
+         .carousel .slide a {
+            z-index: 1000;
+            display: block;
          }
       </style>
    </head>
@@ -213,12 +217,13 @@
          <div class="title" style="text-align: center;"><br/>Sponsored by:<br/><br/></div>
          <div id="carousel" class="carousel">
             <div class="slides">
-               <div class="slide" data-state="active"><a href="https://codebeez.nl/" target="_blank"><img src="logos/codebeez.png"/></a></div>
-               <div class="slide"><a href="https://cyberseals.nl/" target="_blank"><img src="logos/cyberseals.png"/></a></div>
-               <div class="slide"><a href="https://dataworkz.nl/" target="_blank"><img src="logos/dataworkz.png"/></a></div>
-               <div class="slide"><a href="https://www.groundworkz.nl/" target="_blank"><img src="logos/groundworkz.png"/></a></div>
-               <div class="slide"><a href="https://www.lemonshark.nl/" target="_blank"><img src="logos/lemonshark.png"/></a></div>
-               <div class="slide"><a href="https://skyworkz.nl/" target="_blank"><img src="logos/skyworkz.png"/></a></div>
+               <div class="slide" data-state="active"><a href="https://codebeez.nl/" target="_blank"><object data="logos/codebeez.svg" width="454" height="200"></object></a></div>
+               <div class="slide"><a href="https://cyberseals.nl/" target="_blank"><object data="logos/cyberseals.svg" width="454" height="200"></object></a></div>
+               <div class="slide"><a href="https://dataworkz.nl/" target="_blank"><object data="logos/dataworkz.svg" width="454" height="200"></object></a></div>
+               <div class="slide"><a href="https://www.groundworkz.nl/" target="_blank"><object data="logos/groundworkz.svg" width="454" height="200"></object></a></div>
+               <div class="slide"><a href="https://www.lemonshark.nl/" target="_blank"><object data="logos/lemonshark.svg" width="454" height="200"></object></a></div>
+               <div class="slide"><a href="https://skyworkz.nl/" target="_blank"><object data="logos/skyworkz.svg" width="454" height="200"></object></a></div>
+               <div class="slide"><a href="https://smartworkz.nl/" target="_blank"><object data="logos/smartworkz.svg" width="454" height="200"></object></a></div>
             </div>
          </div>
       </div>
@@ -306,7 +311,7 @@
 <script>
    var carousel = document.getElementById('carousel');
    var currentSlide = 0
-   var slides = 6;
+   var slides = 7;
    var speed = 3000;
 
    function carouselHide(num) {
